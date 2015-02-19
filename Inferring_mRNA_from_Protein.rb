@@ -79,6 +79,7 @@ codon_dict = {
   GGG: 'G',
 }
 
+# Initialize number of different RNA strings
 numDifRNAstrings = 1
 
 protein_string.each do | base |
@@ -88,5 +89,5 @@ end
 # Multiply by 3 since there are 3 different stop codons
 numDifRNAstrings *= 3
 
-#numDifRNAstrings %= 1000000
+numDifRNAstrings %= 1000000
 puts numDifRNAstrings
